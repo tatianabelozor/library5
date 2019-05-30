@@ -14,8 +14,8 @@
     </head>
     <body>
         <h1>В нашей библиотеке имеются следующие книги:</h1>
-        <c:forEach var="book" items="${listBooks}">
-            <p>${book}</p>
+        <c:forEach var="book" items="${listBooks}" varStatus="number">
+            <p>${number.index+1}."${book.name}".${book.author}.${book.publishedYear}</p>
         </c:forEach>
     </body>
 </html>
