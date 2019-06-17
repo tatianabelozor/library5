@@ -1,28 +1,21 @@
-<%-- 
-    Document   : showAddBook
-    Created on : May 9, 2019, 2:49:58 PM
-    Author     : user
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Добавление читателя</title>
-    </head>
-    <body>
+    <div class="w-100 p-3 text-center">
         <h1>Новый чититель</h1>
-      
+        <hr>
         <form action="createReader" method="POST">
             Имя читателя:<br>
-            <input type="text" name="name"><br>
+            <input class="w-50" type="text" name="name"><br>
             Фамилия читателя:<br>
-            <input type="text" name="surname"><br>
+            <input class="w-50" type="text" name="surname"><br>
             Телефон:<br>
-            <input type="text" name="phone"><br>
+            <input class="w-50" type="text" name="phone"><br>
+            Логин:<br>
+            <input class="w-50" type="text" name="login"><br>
+            Пароль:<br>
+            <input class="w-50" type="password" name="password"><br>
             
-            <input type="submit" value="Добавить">
-        </form>        
-    </body>
-</html>
+            <input type="submit" value="Добавить" class="mt-3 w-50 btn btn-light border">
+        </form>      
+    </div>
+   

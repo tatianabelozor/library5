@@ -1,0 +1,20 @@
+.bg-color-container{
+    background-color: #E0F7FF;
+}
+.border-container{
+    border: 2px solid antiquewhite;
+}
+.list-elements{
+    font-size: 1.2em;
+    width: 100%;
+    padding: 2px;
+    
+}
+.bg-list{
+    background-color: #E0FFE4;
+    color: #518799;
+}
+.margin-container-center{
+    margin: 0 auto;
+}
+

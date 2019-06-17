@@ -1,21 +1,17 @@
-<%-- 
-    Document   : listBooks
-    Created on : May 9, 2019, 7:20:52 PM
-    Author     : user
---%>
 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Список книг в библиотеке</title>
-    </head>
-    <body>
-        <h1>В нашей библиотеке имеются следующие книги:</h1>
-        <c:forEach var="book" items="${listBooks}" varStatus="number">
-            <p>${number.index+1}."${book.name}".${book.author}.${book.publishedYear}</p>
-        </c:forEach>
-    </body>
-</html>
+
+        <h4 class="text-center">В нашей библиотеке имеются следующие книги:</h4>
+        <hr>
+        <table class="list-elements">
+            <c:forEach var="book" items="${listBooks}" varStatus="number">
+                <tr class="p-3">
+                    <td class="p-2">${number.index+1}. "${book.name}". ${book.author} </td>
+                    <td class="p-2 text-right"><a href="showBook?bookId=${book.id}">Посмотреть</a></td>
+                </tr>
+            </c:forEach>
+                <tr >
+                    <td class="text-right"><hr>Всего книг: </td>
+                    <td class="text-center"><hr>${count}</td>
+                </tr>
+        </table>

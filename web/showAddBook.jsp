@@ -1,30 +1,19 @@
-<%-- 
-    Document   : showAddBook
-    Created on : May 9, 2019, 2:49:58 PM
-    Author     : user
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Добавление книги</title>
-    </head>
-    <body>
-        <h1>Создать книгу</h1>      
+    <div class="w-100 p-3 text-center">
+        <h4>Создать книгу</h4>
+        <hr>
         <form action="createBook" method="POST">
             Название книги:<br>
-            <input type="text" name="name"><br>
+            <input class="w-50" type="text" name="name"><br>
             Автор книги:<br>
-            <input type="text" name="author"><br>
+            <input class="w-50" type="text" name="author"><br>
             Год издания книги:<br>
-            <input type="text" name="publishedYear"><br>
+            <input class="w-50" type="text" name="publishedYear"><br>
             ISBN книги:<br>
-            <input type="text" name="isbn"><br>
+            <input class="w-50" type="text" name="isbn"><br>
             Количество книг:<br>
-            <input type="text" name="quantity"><br>
-            <input type="submit" value="Создать">
+            <input class="w-50" type="text" name="quantity"><br>
+            <input type="submit" value="Создать" class="mt-3 w-50 btn btn-light border">
         </form>        
-    </body>
-</html>
+    </div>
